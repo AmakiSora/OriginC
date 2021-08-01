@@ -21,7 +21,7 @@ int i;//全局变量,默认初始化为0
 void function(int i){
     printf("function:i = %d\n",i);
 }
-int main(){
+int main_(){
     function(1);
     printf("main:i = %d\n",i);
 

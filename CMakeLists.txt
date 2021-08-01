@@ -12,5 +12,6 @@ set(CMAKE_C_STANDARD 11)
 #add_executable(OriginC C/Primary/ProgramFlowControl.c)
 #add_executable(OriginC C/Primary/Enumeration.c)
 #add_executable(OriginC C/Primary/Function.c C/Primary/HeaderFile.h C/Primary/HeaderFile.c)
-add_executable(OriginC C/Primary/VariableScope.c)
+#add_executable(OriginC C/Primary/VariableScope.c)
+add_executable(OriginC  C/Primary/VariableScope.c C/Primary/Static.c)
 #这个add_executable貌似只能有一句,不能重复多个
