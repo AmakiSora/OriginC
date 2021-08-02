@@ -12,7 +12,7 @@
  *      const不能重定义,不可以定义两个一样的,而define通过undef取消某个符号的定义再重新定义
  *      define可以配合#ifdef,#ifndef,#endif来使用,让代码更灵活
  */
-//预处理器 #define 常量名 常量值
+//宏定义(预处理) #define 常量名 常量值
 #define PI 3.14
 
 #define viod void //可以实现一些骚操作
@@ -29,6 +29,7 @@
 #define Debug//
 #undef Debug //
 
+#define MAX(a,b)(a>b)?a:b //带参数的宏,形参和宏名之间不能有空格,(a,b)是形参,(a>b)?a:b是对应的字符串,该字符串可以使用形参
 viod mian(){
     //const 数据类型 常量名 = 常量值
     const double pi = 3.1415;
@@ -48,4 +49,7 @@ viod mian(){
 #ifndef Debug
     printf("No!\n");
 #endif
+
+    int max = MAX(1,2);//在宏替换时,会进行字符串替换,同时会使用实参替换形参,即变成(1>2)?1:2,结果为2
+    printf("max = %d\n",max);
 }
