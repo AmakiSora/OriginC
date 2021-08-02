@@ -19,5 +19,6 @@ set(CMAKE_C_STANDARD 11)
 #add_executable(OriginC C/Primary/StandardLibrary/MathH.c)
 #add_executable(OriginC C/Primary/StandardLibrary/StdioH.c)
 #add_executable(OriginC C/Primary/StandardLibrary/StdlibH.c)
-add_executable(OriginC C/Primary/Pretreatment.c)
+#add_executable(OriginC C/Primary/Pretreatment.c)
+add_executable(OriginC C/Primary/Array.c)
 #这个add_executable貌似只能有一句,不能重复多个
