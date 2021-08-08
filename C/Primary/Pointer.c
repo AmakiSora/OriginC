@@ -65,4 +65,12 @@ int main(){
     //函数指针变量可作为某个函数的参数来使用,回调函数就是一个通过函数指针调用的函数
     test2(66,test);//传入函数名
 
+    //void类型指针(无类型指针(typeless pointer))即不指向哪一种具体类型的数据,只表示指向一个抽象类型的数据,即仅提供一个纯地址,而不能指向任意具体对象
+    int vip = 6;//
+    int *vpi = &vip;//int类型的指针
+    char *vpc;//char类型的指针
+    void *vp;//无类型指针变量
+    vp = (void *)vpi;//将int指针的值转换为void类型,然后赋给void指针
+    vpc = (char *)vp;//将void指针的值转换为char类型，然后赋值给char指针
+    printf("vpc = %c\n",*vpc);//???
 }
