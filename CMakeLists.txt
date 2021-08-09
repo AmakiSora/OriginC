@@ -21,5 +21,6 @@ set(CMAKE_C_STANDARD 11)
 #add_executable(OriginC C/Primary/StandardLibrary/StdlibH.c)
 #add_executable(OriginC C/Primary/Pretreatment.c)
 #add_executable(OriginC C/Primary/Array.c)
-add_executable(OriginC C/Primary/DynamicMemoryAllocation.c)
+#add_executable(OriginC C/Primary/DynamicMemoryAllocation.c)
+add_executable(OriginC C/Primary/Struct.c)
 #这个add_executable貌似只能有一句,不能重复多个
